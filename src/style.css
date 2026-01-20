@@ -1,5 +1,135 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #0f4c5c;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 25px;
+    min-height: 100vh;
+    margin: 50px;
+}
+
+h1 {
+    display: flex;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    font-family: 'Georgia', serif;
+    padding: 5px;
+}
+
+.paloIzq,
+.paloDcha {
+    font-size: 80px;
+    width: 100%;
+    
+}
+.card.red .paloIzq,
+.card.red .paloDcha,
+.card.red .number {
+  color: red;
+}
+
+.card.black .paloIzq,
+.card.black .paloDcha,
+.card.black .number {
+  color: black;
+}
+
+.borde {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px 0 15px;
+   
+
+}
+
+.paloIzq {
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -10px;
+}
+
+.paloDcha {
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+}
+
+.number {
+    font-size: 120px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.palos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: black;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
 }
